@@ -22,7 +22,7 @@ import java.util.List;
 
 public class FindWords extends Activity {
 
-    private List<Word> language = Ipa.Cantonese;
+    private List<Word> language = Ipa.Mongolian;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
