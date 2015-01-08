@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent">
+    <include layout="@layout/title_bar" android:id="@+id/include"/>
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignLeft="@+id/what"
+            android:background="#555" android:layout_below="@+id/include">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/congratulations_foreign" android:textSize="32sp" android:layout_centerHorizontal="true"
+                android:layout_alignRight="@+id/reveal"
+                android:layout_alignLeft="@+id/reveal"
+                android:autoText="false" android:gravity="center_horizontal" android:layout_marginTop="12dp"
+                android:textColor="#fff"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/congratulations_native" android:textSize="32sp"
+                android:autoText="false"
+                android:gravity="center_horizontal" android:layout_centerHorizontal="true"
+                android:layout_below="@+id/congratulations_foreign" android:layout_marginTop="12dp"
+                android:textColor="#fff"/>
+        <RelativeLayout android:layout_width="fill_parent"
+                        android:layout_height="2dip"
+                        android:background="#33333300" android:layout_alignLeft="@+id/done_notice"
+                        android:layout_below="@+id/congratulations_native" android:layout_marginTop="6dp"
+                        android:layout_marginRight="6dp"/>
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/done_notice"
+                android:id="@+id/done_notice"
+                android:singleLine="false"
+                android:shadowColor="#ffff00" android:layout_centerHorizontal="true"
+                android:layout_below="@+id/congratulations_native" android:layout_marginTop="18dp"
+                android:textColor="#fff" android:layout_marginLeft="6dip" android:layout_marginRight="6dip"/>
+        <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/close_application_button"
+                android:id="@+id/reveal" android:layout_centerHorizontal="true" android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:singleLine="true" android:layout_alignParentLeft="true"
+                android:layout_gravity="center_horizontal|bottom"/>
+    </RelativeLayout>
+</RelativeLayout>

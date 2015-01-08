@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="pronunciation_guidance">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../pronunciation_guidance/out/artifacts/pronunciation_guidance_jar/pronunciation_guidance.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

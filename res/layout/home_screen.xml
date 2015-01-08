@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/coverImage"
+        android:layout_gravity="center"
+        android:src="@drawable/cover"
+        android:scaleType="fitXY"
+        android:contentDescription="@string/coverImageContentDescription"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:showDividers="beginning|middle|end"
+        android:divider="@color/key">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            android:id="@+id/learn">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/home_screen_learn_about"
+                android:id="@+id/textView"
+                android:textSize="36sp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/textView4"
+                android:layout_gravity="center_vertical"
+                android:textSize="48sp"
+                android:gravity="right"
+                android:layout_marginRight="50dp"
+                android:text="☉"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            android:id="@+id/dictionary">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/home_screen_show_dictionary_menu"
+                android:id="@+id/textView2"
+                android:textSize="36sp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/textView5"
+                android:layout_gravity="center_vertical"
+                android:textSize="48sp"
+                android:gravity="right"
+                android:layout_marginRight="50dp"
+                android:text="☉"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            android:id="@+id/practice">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/home_screen_start_learning_words"
+                android:id="@+id/textView3"
+                android:textSize="36sp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/textView6"
+                android:layout_gravity="center_vertical"
+                android:textSize="48sp"
+                android:gravity="right"
+                android:layout_marginRight="50dp"
+                android:text="☉"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

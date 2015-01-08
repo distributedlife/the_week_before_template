@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <include layout="@layout/title_bar" android:id="@+id/include"/>
+    <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/reveal" android:background="#555" android:layout_below="@+id/include">
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/what"
+                    android:textSize="36dp"
+                    android:layout_centerHorizontal="true" android:layout_alignParentTop="true"
+                    android:gravity="center_horizontal" android:textAllCaps="false" android:typeface="sans"
+                    android:textColor="#fff"
+                    android:text="what"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/meaning"
+                    android:layout_centerHorizontal="true" android:layout_below="@+id/what"
+                    android:layout_marginBottom="24dp"
+                    android:text="meaning"/>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ipa"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="12dp"
+                android:layout_below="@+id/meaning"
+                android:textSize="24dp"
+                android:textStyle="italic"
+                android:textColor="@color/key"
+                android:gravity="center"
+                android:text="ipa"/>
+
+            <ListView
+                android:layout_width="fill_parent"
+                android:layout_height="250dp"
+                android:id="@+id/pronunciation_list"
+                android:headerDividersEnabled="false"
+                android:clickable="true"
+                android:drawSelectorOnTop="true"
+                android:layout_below="@+id/ipa"
+                android:layout_alignParentLeft="true"
+                android:smoothScrollbar="true"/>
+
+            <SurfaceView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tones"
+                android:layout_below="@+id/pronunciation_list"
+                android:layout_alignParentLeft="true"/>
+
+        </RelativeLayout>
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" android:layout_gravity="center_horizontal|bottom" android:orientation="horizontal"
+                android:weightSum="1.0"
+                android:visibility="visible">
+            <Button
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:layout_width="0dip"
+                    android:text="@string/review_failure_button"
+                    android:id="@+id/fail" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true"
+                    android:layout_toLeftOf="@+id/what"
+                    android:textSize="24dp"
+                    android:textAllCaps="true" android:typeface="sans"/>
+            <Button
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:layout_width="0dip"
+                    android:text="@string/review_success_button"
+                    android:id="@+id/pass" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"
+                    android:layout_alignBottom="@+id/fail" android:layout_gravity="right|bottom" android:textSize="24dp" android:textAllCaps="true"
+                    android:typeface="sans"/>
+        </LinearLayout>
+    </FrameLayout>
+</RelativeLayout>

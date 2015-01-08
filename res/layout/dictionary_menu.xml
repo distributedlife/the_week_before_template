@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    android:layout_height="fill_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:measureWithLargestChild="false"
+    >
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="@string/menu_manners"
+                android:id="@+id/manners"
+                android:layout_column="0"
+                android:layout_weight="0.5"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:background="#00fcff"
+                android:textColor="#000"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="@string/menu_greetings"
+                android:id="@+id/salutations"
+                android:layout_weight="0.5"
+                android:textSize="18sp"
+                android:background="#ffe500"
+                android:textColor="#000"
+                android:ellipsize="none"
+                android:textStyle="bold"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="@string/menu_general_words"
+                android:id="@+id/general"
+                android:layout_weight="0.5"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:background="#ff0005"
+                android:textColor="#000"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="@string/menu_food"
+                android:id="@+id/food"
+                android:layout_weight="0.5"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:background="#ff00b1"
+                android:textColor="#000"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="@string/menu_numbers"
+                android:id="@+id/numbers"
+                android:layout_weight="0.5"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:background="#0400ff"
+                android:textColor="#000"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="@string/menu_place_things"
+                android:id="@+id/places_and_things"
+                android:layout_weight="0.5"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:background="#a7edff"
+                android:textColor="#000"
+                android:minLines="2"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="@string/menu_date_time"
+                android:id="@+id/dates_and_times"
+                android:layout_weight="0.5"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:background="#8dff7e"
+                android:textColor="#000"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="@string/menu_search"
+                android:id="@+id/search"
+                android:layout_weight="0.5"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:background="#ffc4a0"
+                android:textColor="#000"/>
+
+        </TableRow>
+
+</TableLayout>

@@ -14,64 +14,41 @@
         android:textStyle="bold"
         android:singleLine="true"
         android:gravity="center"
-        android:textSize="36dp"/>
+        android:textSize="36dp"
+        android:text="word-missing"/>
 
     <TextView
         android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/ipa"
+        android:textStyle="bold"
+        android:textColor="#ff9600"
+        android:textSize="24dp"
+        android:text="ipa-missing"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:id="@+id/meaning"
         android:textStyle="italic"
-        android:textSize="12dp"/>
+        android:gravity="center"
+        android:textSize="24dp"
+        android:text="english-missing"/>
 
-    <LinearLayout
-        android:orientation="horizontal"
+    <ListView
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_horizontal">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:id="@+id/ipa"
-            android:layout_gravity="center_horizontal"
-            android:textStyle="bold"
-            android:textColor="#ff9600"
-            android:padding="5dp"
-            />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:id="@+id/where"
-            android:gravity="center"
-            android:padding="5dp"
-            android:layout_gravity="right"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/guidance"
-        android:gravity="center_horizontal">
-
-    </LinearLayout>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/guide_collapsed"
-        android:textStyle="bold"
-        android:layout_gravity="center_horizontal"
-        android:textColor="#ff9600"
-        android:textSize="36dp"/>
+        android:layout_height="250dp"
+        android:id="@+id/pronunciation_list"
+        android:headerDividersEnabled="false"
+        android:clickable="true"
+        android:drawSelectorOnTop="true"/>
 
     <SurfaceView
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
+        android:layout_height="wrap_content"
         android:id="@+id/tones"
         />
 

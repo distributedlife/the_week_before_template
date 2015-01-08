@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+        >
+    <include layout="@layout/title_bar" android:id="@+id/include"/>
+    <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:background="#555" android:layout_below="@+id/include">
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/what" android:gravity="center_horizontal|top"
+                android:textSize="72sp" android:typeface="sans" android:visibility="visible"
+                android:layout_gravity="center" android:textColor="#FFF"
+                android:paddingTop="12dp"/>
+        <Button
+                android:layout_width="fill_parent"
+                android:layout_height="72dp"
+                android:text="@string/reveal_button"
+                android:id="@+id/reveal" android:layout_gravity="bottom"
+                android:clickable="false" android:typeface="sans" android:visibility="visible" android:textSize="24dp"
+                android:singleLine="false"
+                android:textAllCaps="true"/>
+        <RelativeLayout android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/done_notice"
+                        android:layout_below="@+id/congratulations_native"
+                        android:layout_gravity="center_vertical|bottom" android:layout_marginLeft="6dp"
+                        android:layout_marginRight="6dp" android:layout_marginBottom="84dp">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/review_hint"
+                    android:id="@+id/hint" android:layout_gravity="center" android:layout_marginLeft="12dp"
+                    android:textSize="16sp" android:textColor="#fff" android:layout_alignParentBottom="false"
+                    />
+        </RelativeLayout>
+    </FrameLayout>
+</RelativeLayout>
+

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="pushflashbang_engine">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../pushflashbang_engine/out/artifacts/pushflashbang_engine_jar/pushflashbang_engine.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

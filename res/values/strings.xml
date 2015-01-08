@@ -1,4 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Travel Pidgin</string>
+    <string name="app_name">The Week Before</string>
+    <string name="congratulations_english">Congratulations</string>
+    <string name="done_notice">You seen all the words we considered super important. Your next review will be due in TIME from now.</string>
+    <string name="close_application_button">Exit</string>
+    <string name="reveal_button">Show Me</string>
+    <string name="review_success_button">Yay!</string>
+    <string name="review_failure_button">Boo!</string>
+    <string name="new_item">This is a new word.</string>
+    <string name="review_new">OK, I\'ll remember this word</string>
+    <string name="review_hint">You\'ve seen this before. Do you remember what this means?</string>
+    <string name="translate_hint">Do you remember how to pronounce this word?</string>
+    <string name="menu_practice">Practice</string>
+    <string name="menu_search">Search</string>
+    <string name="menu_date_time">Time</string>
+    <string name="menu_place_things">Things</string>
+    <string name="menu_numbers">Numbers</string>
+    <string name="menu_food">Food</string>
+    <string name="menu_general_words">General</string>
+    <string name="menu_greetings">Salutations</string>
+    <string name="menu_manners">Manners</string>
+    <string name="coverImageContentDescription">A stereotypical image of whatever country this app is tailored to.</string>
+    <string name="home_screen_learn_about">Learn</string>
+    <string name="home_screen_show_dictionary_menu">Dictionary</string>
+    <string name="home_screen_start_learning_words">Practice</string>
 </resources>

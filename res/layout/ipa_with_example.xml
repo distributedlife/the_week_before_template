@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ipaSymbol"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:textSize="24dp"
+        android:textColor="@color/key"
+        android:paddingLeft="5dp"
+        android:text="missing ipa"
+        android:gravity="top"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/exampleWord"
+        android:textSize="24dp"
+        android:textStyle="italic"
+        android:paddingLeft="10dp"
+        android:text="missing example word"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/ipaSymbol"
+        android:gravity="center_vertical"/>
+</RelativeLayout>
